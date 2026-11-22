@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hypss-Cafe Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="cafe-panel" aria-label="Hypss Cafe atmosphere">
+      <div class="cafe-overlay"></div>
+      <div class="cafe-caption">
+        <span class="caption-line">☕ Fresh coffee, happy moments</span>
+        <span class="caption-sub">Coffee • Tea • Snacks • Juices</span>
+      </div>
+    </section>
+
+    <section class="login-panel" id="loginPanel">
+      <div class="login-content">
+        <div class="brand-icons" aria-hidden="true"><span>☕</span><span>🥣</span></div>
+        <h1>Hypss-Cafe</h1>
+        <h2>Welcome Back</h2>
+        <p class="family-names">Hashmitha &amp; Yeshasvi</p>
+
+        <form id="loginForm" autocomplete="on">
+          <label class="input-wrap">
+            <span class="input-icon" aria-hidden="true">♙</span>
+            <input id="username" name="username" type="text" placeholder="Username" autocomplete="username" required />
+          </label>
+          <label class="input-wrap password-wrap">
+            <span class="input-icon" aria-hidden="true">🔒</span>
+            <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required />
+            <button class="show-password" type="button" id="togglePassword" aria-label="Show password">◉</button>
+          </label>
+          <div class="options-row">
+            <label class="remember"><input type="checkbox" id="rememberMe" /> <span>Remember Me</span></label>
+            <button type="button" class="forgot-link" id="forgotPassword">Forgot Password?</button>
+          </div>
+          <button class="login-button" type="submit"><span>↪</span> Login</button>
+          <p class="message" id="message" role="status"></p>
+        </form>
+        <p class="demo-note">Demo login — authentication will be connected in the next phase.</p>
+        <p class="copyright">© 2026 Hypss-Cafe · Coffee · Juice · Snacks</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="dashboard" id="dashboard" hidden>
+    <header class="dashboard-header">
+      <div><span class="dash-logo">☕</span><strong>Hypss-Cafe</strong></div>
+      <button id="logoutButton" class="logout-button">Logout</button>
+    </header>
+    <div class="dashboard-welcome">
+      <p class="eyebrow">CAFE MANAGEMENT</p>
+      <h1>Welcome, <span id="loggedUser">Admin</span>!</h1>
+      <p>Login successful. Your Hypss-Cafe demo dashboard is ready.</p>
+      <div class="dashboard-cards">
+        <article><span>☕</span><h3>Coffee &amp; Tea</h3><p>Manage hot beverages</p></article>
+        <article><span>🍔</span><h3>Snacks</h3><p>Manage cafe snacks</p></article>
+        <article><span>🧃</span><h3>Juices</h3><p>Manage fresh juices</p></article>
+        <article><span>📋</span><h3>Orders</h3><p>Order management is coming soon</p></article>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
